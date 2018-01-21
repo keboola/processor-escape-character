@@ -1,0 +1,9 @@
+version: '2'
+services:
+  php:
+    build: .
+    image: keboola/processor-escape-character
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/code
