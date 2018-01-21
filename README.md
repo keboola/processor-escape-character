@@ -36,9 +36,11 @@ Required parameters:
 ```
 {  
     "definition": {
-        "component": "keboola.processor-escape-character",
+        "component": "keboola.processor-escape-character"
+    },
+    "parameters": {
         "escaped_by": "\\"
-    }
+    }    
 }
 ```
 
