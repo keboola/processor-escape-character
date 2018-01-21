@@ -54,7 +54,7 @@ try {
                 'Manifest file for table ' . $file->getBasename() . ' does not specify enclosure.'
             );
         }
-        $fs->rename($manifestFile, $dataDir . $destination . $file->getFilename() . ".manifest");
+        $fs->rename($manifestFile, $destination . $file->getFilename() . ".manifest");
 
         if (is_dir($file->getPathname())) {
             // sliced file
