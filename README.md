@@ -2,7 +2,14 @@
 
 [![Build Status](https://travis-ci.org/keboola/processor-escape-character.svg?branch=master)](https://travis-ci.org/keboola/processor-escape-character)
 
-Takes all tables in `/data/in/tables` and removes the defined escape character from the files and stores them to `/data/out/tables`. 
+Takes all tables in `/data/in/tables` and removes the defined escape character from the files and stores them to `/data/out/tables`.
+
+ - Applies to sliced files too
+ - Copies manifest file
+
+## Example
+
+`escaped_by` set to `\` 
 
 | Source  | Result |
 | ------------- | ------------- |
@@ -14,17 +21,12 @@ Takes all tables in `/data/in/tables` and removes the defined escape character f
 | `a\"b` | `a"b` |
 | `a\b` | `ab` |
 
- - Applies to sliced files too.
- - Copies manifest file.
-
 ## Prerequisites
 
-All CSV files must
-
-- have a manifest file with `delimiter` and `enclosure` properties
-
+All CSV files must have a manifest file with `delimiter` and `enclosure` properties.
 
 ## Usage
+
 Required parameters:
 
 - `escaped_by` -- Escaping character 
