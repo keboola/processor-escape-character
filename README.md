@@ -69,3 +69,7 @@ docker-compose run php php ./tests/run.php
    - publish image to ECR if release is tagged
 
 
+
+## License
+
+MIT licensed, see [LICENSE](./LICENSE) file.
